@@ -1,0 +1,26 @@
+name       : pgadmin
+version    : 1.22.1
+release    : 1
+source     :
+    - https://ftp.postgresql.org/pub/pgadmin3/release/v1.22.1/src/pgadmin3-1.22.1.tar.gz : 719ea7c0e65d99e8f365bf2d395d7a199804170b3266ada1374d9ac790bc783e
+license    : PostgreSQL License 
+summary    : Open Source administration and development platform for PostgreSQL
+description: |
+    Open Source administration and development platform for PostgreSQL 
+builddeps  :
+    - postgresql-devel
+    - wxwidgets-devel
+    - pip
+rundeps:
+    - postgresql
+setup      : |
+    sed -i 's/Icon=.*/Icon=pgadmin3/' $srcdir/pkg/pgadmin3.desktop
+    pip install sphinx
+    %configure --disable-static --with-wx-version=3.0
+build      : |
+    %make
+install    : |
+    %make_install
+    install -Dm644 pkg/pgadmin3.desktop %installroot%/usr/share/applications/pgadmin3.desktop
+    install -Dm644 i18n/pgadmin3.lng %installroot%/usr/share/pgadmin3/i18n/pgadmin3.lng
+    install -Dm644 pgadmin/include/images/pgAdmin3.png %installroot%/usr/share/pixmaps/pgadmin3.png

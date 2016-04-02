@@ -1,0 +1,39 @@
+<PISI>
+    <Source>
+        <Name>pgadmin</Name>
+        <Packager>
+            <Name>Jeronimo</Name>
+            <Email>jeron08@gmail.com</Email>
+        </Packager>
+        <License>PostgreSQL License</License>
+        <Summary xml:lang="en">Open Source administration and development platform for PostgreSQL</Summary>
+        <Description xml:lang="en">Open Source administration and development platform for PostgreSQL 
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>pgadmin</Name>
+        <Summary xml:lang="en">Open Source administration and development platform for PostgreSQL</Summary>
+        <Description xml:lang="en">Open Source administration and development platform for PostgreSQL 
+</Description>
+        <PartOf>database</PartOf>
+        <RuntimeDependencies>
+            <Dependency>postgresql</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pgadmin3</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-04-02</Date>
+            <Version>1.22.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jeronimo</Name>
+            <Email>jeron08@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
