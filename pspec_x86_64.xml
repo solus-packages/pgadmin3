@@ -1,39 +1,37 @@
 <PISI>
     <Source>
-        <Name>pgadmin</Name>
+        <Name>pgadmin3</Name>
         <Packager>
-            <Name>Jeronimo</Name>
-            <Email>jeron08@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>PostgreSQL License</License>
+        <PartOf>programming.tools</PartOf>
         <Summary xml:lang="en">Open Source administration and development platform for PostgreSQL</Summary>
-        <Description xml:lang="en">Open Source administration and development platform for PostgreSQL 
+        <Description xml:lang="en">Open Source administration and development platform for PostgreSQL
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
-        <Name>pgadmin</Name>
+        <Name>pgadmin3</Name>
         <Summary xml:lang="en">Open Source administration and development platform for PostgreSQL</Summary>
-        <Description xml:lang="en">Open Source administration and development platform for PostgreSQL 
+        <Description xml:lang="en">Open Source administration and development platform for PostgreSQL
 </Description>
-        <PartOf>database</PartOf>
-        <RuntimeDependencies>
-            <Dependency>postgresql</Dependency>
-        </RuntimeDependencies>
+        <PartOf>programming.tools</PartOf>
         <Files>
-            <Path fileType="data">/usr/share/pixmaps</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/pgadmin3</Path>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/pgadmin3.desktop</Path>
+            <Path fileType="data">/usr/share/pgadmin3</Path>
+            <Path fileType="data">/usr/share/pixmaps/pgadmin3.png</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
-            <Date>2016-04-02</Date>
+            <Date>2016-07-02</Date>
             <Version>1.22.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Jeronimo</Name>
-            <Email>jeron08@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
