@@ -1,8 +1,8 @@
 name       : pgadmin3
-version    : 1.22.1
-release    : 3
+version    : 1.22.2
+release    : 4
 source     :
-    - https://ftp.postgresql.org/pub/pgadmin3/release/v1.22.1/src/pgadmin3-1.22.1.tar.gz : 719ea7c0e65d99e8f365bf2d395d7a199804170b3266ada1374d9ac790bc783e
+    - https://ftp.postgresql.org/pub/pgadmin3/release/v1.22.2/src/pgadmin3-1.22.2.tar.gz : 9b68b0e3d3f0a261344fb8196825967d1e7acaca1d8cc82c42e12368ca5844ac
 license    : PostgreSQL License
 component  : programming.tools
 summary    : Open Source administration and development platform for PostgreSQL
@@ -10,6 +10,7 @@ description: |
     Open Source administration and development platform for PostgreSQL
 builddeps  :
     - pkgconfig(libpq)
+    - pkgconfig(libxslt)
     - pkgconfig(python-2.7)
     - python-setuptools
     - python-sphinx
