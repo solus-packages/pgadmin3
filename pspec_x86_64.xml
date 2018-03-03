@@ -2,8 +2,8 @@
     <Source>
         <Name>pgadmin3</Name>
         <Packager>
-            <Name>Matthias Eliasson</Name>
-            <Email>matthias.eliasson@gmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
         <License>PostgreSQL License</License>
         <PartOf>programming.tools</PartOf>
@@ -26,12 +26,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2017-02-06</Date>
+        <Update release="7">
+            <Date>2018-02-24</Date>
             <Version>1.22.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Matthias Eliasson</Name>
-            <Email>matthias.eliasson@gmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>

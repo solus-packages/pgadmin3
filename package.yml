@@ -1,6 +1,6 @@
 name       : pgadmin3
 version    : 1.22.2
-release    : 6
+release    : 7
 source     :
     - https://ftp.postgresql.org/pub/pgadmin/pgadmin3/v1.22.2/src/pgadmin3-1.22.2.tar.gz : 9b68b0e3d3f0a261344fb8196825967d1e7acaca1d8cc82c42e12368ca5844ac
 license    : PostgreSQL License
@@ -11,7 +11,6 @@ description: |
 builddeps  :
     - pkgconfig(libpq)
     - pkgconfig(libxslt)
-    - pkgconfig(python-2.7)
     - python-setuptools
     - python-sphinx
     - wxwidgets-devel
@@ -25,6 +24,7 @@ build      : |
     %make CXXFLAGS="${CXXFLAGS} -fno-delete-null-pointer-checks"
 install    : |
     %make_install
-    install -Dm644 pkg/pgadmin3.desktop %installroot%/usr/share/applications/pgadmin3.desktop
-    install -Dm644 i18n/pgadmin3.lng %installroot%/usr/share/pgadmin3/i18n/pgadmin3.lng
-    install -Dm644 pgadmin/include/images/pgAdmin3.png %installroot%/usr/share/pixmaps/pgadmin3.png
+    install -Dm00644 pkg/pgadmin3.desktop %installroot%/usr/share/applications/pgadmin3.desktop
+    install -Dm00644 i18n/pgadmin3.lng %installroot%/usr/share/pgadmin3/i18n/pgadmin3.lng
+    install -Dm00644 pgadmin/include/images/pgAdmin3.png %installroot%/usr/share/pixmaps/pgadmin3.png
+
