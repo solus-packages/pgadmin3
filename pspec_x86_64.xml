@@ -2,8 +2,8 @@
     <Source>
         <Name>pgadmin3</Name>
         <Packager>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Packager>
         <License>PostgreSQL License</License>
         <PartOf>programming.tools</PartOf>
@@ -140,6 +140,7 @@
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/debugger.png</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/default.css</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/doctools.js</Path>
+            <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/documentation_options.js</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/down-pressed.png</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/down.png</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/editgrid.png</Path>
@@ -150,7 +151,7 @@
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/gridopt-filter.png</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/gridopt-sort.png</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/guru-connect.png</Path>
-            <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/jquery-3.1.0.js</Path>
+            <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/jquery-3.2.1.js</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/jquery.js</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/locks.png</Path>
             <Path fileType="data">/usr/share/pgadmin3/docs/en_US/_static/logfile.png</Path>
@@ -416,12 +417,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-06-23</Date>
+        <Update release="10">
+            <Date>2018-08-20</Date>
             <Version>1.22.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Update>
     </History>
 </PISI>
